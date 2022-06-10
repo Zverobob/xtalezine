@@ -1,0 +1,139 @@
+@font-face {
+    font-family: EngraversGothic-BT;
+    src: url(fonts/EngraversGothicBT.ttf);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-size: 18px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.main {
+    background-image: url("img/Coming soon.png");
+}
+
+.faq {
+    background-image: url("img/FAQ.png");
+    background-color: #e42034;
+}
+
+.page-header {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    max-height: 100px;
+    width: auto;
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.top-button{
+    margin: 0 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+    font-family: 'EngraversGothic-BT';
+}
+
+.vl{
+    border-left: 2px solid #ffffff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    color: white;
+}
+
+dt {
+    margin-top: 50px;
+    font-weight: 1000;
+    font-size: 46px;
+    font-family: 'EngraversGothic-BT';
+}
+
+dd {
+    margin-bottom: 50px;
+    font-weight: 1000;
+    font-size: 24px;
+    font-family: 'EngraversGothic-BT';
+}
+.main-content{
+    position: relative;
+    min-height: 1020px;
+}
+
+.footer-twitter {
+    padding: 50px ;
+    background-image: url("logo/twitter.svg");
+    background-size: 65%;
+}
+
+.footer-tumblr {
+    padding: 50px;
+    background-image: url("logo/tumblr.svg");
+    background-size: 65%;
+}
+
+.footer-cat {
+    padding: 50px;
+    background-image: url("logo/curcat.svg");
+    background-size: 65%;
+}
+
+.page-footer a {
+    color: inherit;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.page-footer {
+    padding: 30px 0;
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 0px -9px 20px rgba(41, 3, 43, 0.8);
+}
+
+.footer-links{
+    width: 900px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-mail{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'EngraversGothic-BT';
+}
+
+.footer-text{
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: center;
+}
