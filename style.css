@@ -261,7 +261,7 @@ dl{
 }
 .fadeOut{
     color: transparent;
-    transition: 500ms;
+    transition: 400ms;
     border-color: transparent;
 }
 

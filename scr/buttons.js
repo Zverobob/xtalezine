@@ -67,7 +67,7 @@ const locale = {
             fadeOut.forEach(element => {
                 element.classList.add('fadeOut');
             });
-            setTimeout(function(){ locale.updText(btn.target.dataset.lang) }, 700);
+            setTimeout(function(){ locale.updText(btn.target.dataset.lang) }, 400);
         }
     },
     
