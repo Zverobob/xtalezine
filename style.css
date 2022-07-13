@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
   }
 
 .main {
-    background-image: url("img/Coming\soon.png");
+    background-image: url("img/Coming\ soon.png");
 }
 
 .faq {
@@ -242,7 +242,6 @@ dl{
     cursor: pointer;
     transition: 600ms ease-in-out;
     margin-left: 40px;
-
     
     align-self: stretch;
     width: 100%;
