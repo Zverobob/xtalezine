@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
   }
 
 .main {
-    background-image: url("img/Coming soon.png");
+    background-image: url("img/Coming\soon.png");
 }
 
 .faq {
@@ -107,11 +107,11 @@ dd {
     font-family: 'EngraversGothic-BT';
     padding-bottom: 10px;
     border-bottom: dotted 4px white;
-    -webkit-animation: fadein 2s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s ease-in-out; /* Firefox < 16 */
-        -ms-animation: fadein 2s ease-in-out; /* Internet Explorer */
-         -o-animation: fadein 2s ease-in-out; /* Opera < 12.1 */
-            animation: fadein 2s ease-in-out;
+    -animation: fadein 2s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s ease-in-out; /* Firefox < 16 */
+        -ms-animation: fadein 1s ease-in-out; /* Internet Explorer */
+         -o-animation: fadein 1s ease-in-out; /* Opera < 12.1 */
+            animation: fadein 1s ease-in-out;
 }
 
 dl{
@@ -259,6 +259,10 @@ dl{
 .lang-btn:active{
     background: red;
     transition: 0.2s;
+}
+.fadeOut{
+    color: transparent;
+    transition: 1000ms;
 }
 
 @media screen and (max-width: 768px) {
