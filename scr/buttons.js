@@ -63,16 +63,9 @@ const locale = {
                 }
             }); 
             btn.target.dataset.sel = 1;
-
-
-            const fadeOut = document.querySelectorAll('dt,dd');
-            fadeOut.forEach(element => {
-                element.classList.add('fadeOut');
-            });
-            fadeOut.forEach(element => {
-                element.addEventListener("transitionend", locale.updText(btn.target.dataset.lang), false);
-            });
-        }    
+            locale.updText(btn.target.dataset.lang);
+        }
+            
     },
     
     addHandlers: function(){
