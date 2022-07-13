@@ -7,8 +7,10 @@
 body {
     margin: 0;
     min-width: 320px;
+    font-family: "Montserrat","Vollkorn SC", "Helvetica", "Arial", "Vollkorn SC", serif, sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    color: #222222;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -26,7 +28,6 @@ body::-webkit-scrollbar {
 }
 
 .faq {
-    background-image: url("img/FAQ.png");
     background-color: #e42034;
 }
 
@@ -39,6 +40,12 @@ body::-webkit-scrollbar {
     border-bottom: 2px solid #ffffff;
 }
 
+.bg {
+    max-width: 100%;
+    height: auto;
+    background-color: #652d85;
+}
+
 .nav{
     display: flex;
     flex-direction: row;
@@ -46,12 +53,18 @@ body::-webkit-scrollbar {
     justify-content: space-evenly;
 }
 .top-button{
-    margin: 0 10px;
+    display: block;
     background-color: black;
     color: white;
     cursor: pointer;
     font-size: 28px;
     font-family: 'EngraversGothic-BT';
+    border: none;
+    transition: 600ms ease-in-out;
+
+    align-self: stretch;
+    width: 100%;
+    flex: 1 1 auto;
 }
 
 .vl{
@@ -71,6 +84,7 @@ body::-webkit-scrollbar {
     background-repeat: repeat-y;
     background-position: top center;
     background-size: contain;
+    padding-bottom: 90px;
 }
 
 dt {
@@ -78,20 +92,80 @@ dt {
     font-weight: 1000;
     font-size: 46px;
     font-family: 'EngraversGothic-BT';
+    list-style-type: '¤ ';
+    display: list-item;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
 }
 
 dd {
     font-weight: 1000;
     font-size: 24px;
     font-family: 'EngraversGothic-BT';
+    padding-bottom: 10px;
+    border-bottom: dotted 4px white;
+    -webkit-animation: fadein 2s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s ease-in-out; /* Firefox < 16 */
+        -ms-animation: fadein 2s ease-in-out; /* Internet Explorer */
+         -o-animation: fadein 2s ease-in-out; /* Opera < 12.1 */
+            animation: fadein 2s ease-in-out;
 }
-dl {
-    margin-bottom: 50px;
+
+dl{
+    margin-bottom: 0px;
 }
-.main-content{
-    position: relative;
-    min-height: 1018px;
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.intCheck{
+    background-image: url("img/intCheck.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* (img-height / img-width * container-width) */
+    /* (853 / 1280 * 100) */
+}
+
+.interstInfo{
+    width: 60%;
+    position: absolute;
+    font-family: 'EngraversGothic-BT';
+    top: 70.3125vh;
+    left: 10%;
+    color: white;
+    font-size: 46px;
+}
+
+.intestLink{
+    color: lightsteelblue;
+}
+
 .faq-content{
     position: relative;
     min-height: 990px;
@@ -126,7 +200,6 @@ dl {
     padding: 30px 0;
     background-color: black;
     color: #ffffff;
-    box-shadow: 0px -9px 20px rgba(41, 3, 43, 0.8);
 }
 
 .footer-links{
@@ -150,4 +223,46 @@ dl {
     margin-top: 40px;
     margin-left: 10px;
     text-align: center;
+}
+
+.lang-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 100px;
+}
+.lang-btn{
+    border-color: whitesmoke;
+    border-style: dotted;
+    background-color: black;
+    color: white;
+    font-size: 34px;
+    font-family: 'EngraversGothic-BT';
+    cursor: pointer;
+    transition: 600ms ease-in-out;
+    margin-left: 40px;
+
+    
+    align-self: stretch;
+    width: 100%;
+    flex: 1 1 auto;
+}
+.active{
+    background-color: #5b2381; 
+}
+
+.lang-btn:hover,.top-button:hover{
+    background-color: #5b2381;
+    transition: 600ms ease-in-out;
+}
+.lang-btn:active{
+    background: red;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+      background-size: auto 20%;
+    }
 }
