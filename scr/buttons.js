@@ -55,7 +55,6 @@ const locale = {
         if( btn.target.dataset.sel == 0){
             btn.target.classList.add('active');
             console.log("Switching to", btn.target.dataset.lang);
-            //console.log(locale.data[btn.target.dataset.lang][0]["title"]); // example of getting data
             buttons.forEach(element => {
                 if (element.dataset.sel == 1){
                     element.classList.remove('active');
@@ -63,9 +62,13 @@ const locale = {
                 }
             }); 
             btn.target.dataset.sel = 1;
-            locale.updText(btn.target.dataset.lang);
+
+            const fadeOut = document.querySelectorAll('dt,dd');
+            fadeOut.forEach(element => {
+                element.classList.add('fadeOut');
+            });
+            setTimeout(function(){ locale.updText(btn.target.dataset.lang) }, 700);
         }
-            
     },
     
     addHandlers: function(){

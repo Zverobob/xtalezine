@@ -261,7 +261,8 @@ dl{
 }
 .fadeOut{
     color: transparent;
-    transition: 1000ms;
+    transition: 500ms;
+    border-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
