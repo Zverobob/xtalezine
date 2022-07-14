@@ -203,8 +203,7 @@ dl{
 }
 
 .footer-links{
-    width: 900px;
-    margin: 40px auto 0 auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -265,8 +264,98 @@ dl{
     border-color: transparent;
 }
 
+@media screen and (max-width: 1024px) {
+    body{
+      background-size: auto 20%;
+    }
+    dt{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    dd{
+        font-size: 25px;
+    }
+    .container{
+        max-width: 768px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body{
       background-size: auto 20%;
+    }
+
+    dt{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .container{
+        max-width: 80%;
+    }
+    .lang-btn{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        max-width: 75%;
+    }
+    .lang-buttons{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .lang-btn{
+        margin: 0px;
+    }
+    dt{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    dd{
+        font-size: 15px;
+    }
+    .footer-twitter {
+        padding: 25px;
+        background-image: url("logo/twitter.svg");
+        background-size: 100%;
+    }
+    
+    .footer-tumblr {
+        padding: 25px;
+        background-image: url("logo/tumblr.svg");
+        background-size: 100%;
+    }
+    
+    .footer-cat {
+        padding: 25px;
+        background-image: url("logo/curcat.svg");
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    dt {
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        margin-top: 50px;
+        font-weight: 1000;
+        font-family: 'EngraversGothic-BT';
+        list-style-type: '';
+        display: list-item;
+    }
+    
+    dd {
+        text-align: center;
+        font-weight: 1000;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 0px;
+        font-family: 'EngraversGothic-BT';
+        padding-bottom: 50px;
+        border-bottom: dotted 4px white;
     }
 }
