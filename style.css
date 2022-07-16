@@ -3,6 +3,11 @@
     src: url(fonts/EngraversGothicBT.ttf);
     font-weight: bold;
 }
+@font-face {
+    font-family: EngraversGothicRU;
+    src: url(fonts/EngraversGothic.ttf);
+    font-weight: bold;
+}
 
 body {
     margin: 0;
@@ -262,6 +267,15 @@ dl{
     color: transparent;
     transition: 400ms;
     border-color: transparent;
+}
+.RUS{
+    font-family: 'EngraversGothicRU';
+}
+dd + .RUS {
+    line-height: 80%;
+}
+dt + .RUS {
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {

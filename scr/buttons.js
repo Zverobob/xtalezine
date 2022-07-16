@@ -5,6 +5,7 @@ const locale = {
 
     buttons: [],
 
+    //Extracting JSON data
     getData: function() {
         fetch('scr/locale.json')
         .then(data => data.json())
@@ -18,10 +19,9 @@ const locale = {
         .catch(() => console.error("WHERE'S MY LOCALES MAN?!"))
     },
 
+    //Creating fancy buttons
     createLocaleButtons: function(){
         const Section = document.querySelector('.lang-buttons');
-        //Refine later ti use JSON and get tada from it
-        //console.log(Section);
         for ( const key in this.data){
             const locBtn = document.createElement('button');
             locBtn.textContent = key;
@@ -44,6 +44,10 @@ const locale = {
             title.textContent = element["title"];
             const text = document.createElement('dd');
             text.textContent = element["text"];
+            if( lang == "Russian"){
+                title.classList.add('RUS');
+                text.classList.add('RUS');
+            }
             Section.appendChild(title);
             Section.appendChild(text);
         });
