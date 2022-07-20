@@ -15,7 +15,7 @@ body {
     font-family: "Montserrat","Vollkorn SC", "Helvetica", "Arial", "Vollkorn SC", serif, sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    color: #222222;
+    background-color: black;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -43,6 +43,7 @@ body::-webkit-scrollbar {
     max-height: 100px;
     width: auto;
     border-bottom: 2px solid #ffffff;
+    z-index: 6;
 }
 
 .bg {
@@ -83,9 +84,21 @@ body::-webkit-scrollbar {
     color: white;
 }
 
-.section-faq{
+.section-faq,.section-guid{
     min-height: 840px;
     background-image: url("img/FAQstrip.png");
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: contain;
+    padding-bottom: 90px;
+}
+.section-guid{
+    background-image: url("img/gdlstrip.png");
+}
+
+.section-app{
+    min-height: 840px;
+    background-image: url("img/gdlstrip.png");
     background-repeat: repeat-y;
     background-position: top center;
     background-size: contain;
@@ -96,6 +109,7 @@ dt {
     margin-top: 50px;
     font-weight: 1000;
     font-size: 46px;
+    line-height: 50px;
     font-family: 'EngraversGothic-BT';
     list-style-type: '¤ ';
     display: list-item;
@@ -110,13 +124,24 @@ dd {
     font-weight: 1000;
     font-size: 24px;
     font-family: 'EngraversGothic-BT';
-    padding-bottom: 10px;
+    padding-top: 20px;
     border-bottom: dotted 4px white;
-    -animation: fadein 2s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: fadein 1s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s ease-in-out; /* Firefox < 16 */
         -ms-animation: fadein 1s ease-in-out; /* Internet Explorer */
          -o-animation: fadein 1s ease-in-out; /* Opera < 12.1 */
             animation: fadein 1s ease-in-out;
+}
+
+.section-guid dd{
+    font-size: 35px;
+    padding-left: 100px;
+    border-bottom: none;
+}
+
+.section-guid dt{
+    padding-top: 20px;
+    border-top: dotted 4px white;
 }
 
 dl{
@@ -146,15 +171,61 @@ dl{
     to   { opacity: 1; }
 }
 
-.intCheck{
-    background-image: url("img/intCheck.png");
+a{
+    text-shadow: transparent 1px 1px 0, transparent -1px -1px 0, 
+    transparent -1px 1px 0, transparent 1px -1px 0;
+    transition: 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.artapp a{
+    color:#e42034;
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: white 1px 1px 0, white -1px -1px 0, 
+    white -1px 1px 0, white 1px -1px 0;
+    transition: 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:hover{
+    transition: 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-shadow: lightsalmon 1px 1px 0, lightsalmon -1px -1px 0, 
+    lightsalmon -1px 1px 0, lightsalmon 1px -1px 0;
+}
+
+.artapp{
+    background-image: url("img/ArtAppBg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%; /* (img-height / img-width * container-width) */
-    /* (853 / 1280 * 100) */
+    padding-top: 56.50%;
+}
+
+.art-body{
+    position: absolute;
+    top: 550px;
+    left: 370px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    z-index: 0;
+}
+.art-body > div:nth-of-type(21) {
+    padding-right: 40px;
+  }
+
+.skele{
+    align-self: right;
+    position: relative;
+    height: 45%;
+    width: 45%;
+}
+
+p{
+    font-weight: 1000;
+    font-size: 46px;
+    font-family: 'EngraversGothic-BT';
+    color: white;
 }
 
 .interstInfo{
@@ -251,19 +322,32 @@ dl{
     width: 100%;
     flex: 1 1 auto;
 }
-.active{
+.active {
     background-color: #5b2381; 
 }
-
+.red{
+    background-color: #81233a; 
+}
 .lang-btn:hover,.top-button:hover{
     background-color: #5b2381;
     transition: 600ms ease-in-out;
 }
+
+.red:hover{
+    background-color: red;
+    transition: 600ms ease-in-out;
+}
+
 .lang-btn:active{
     background: red;
     transition: 0.2s;
 }
 .fadeOut{
+    color: transparent;
+    transition: 400ms;
+    border-color: transparent;
+}
+.section-guid .fadeOut{
     color: transparent;
     transition: 400ms;
     border-color: transparent;
@@ -310,6 +394,11 @@ dt + .RUS {
         margin-left: 20px;
         font-size: 30px;
     }
+    .section-guid dd{
+        font-size: 30px;
+        padding-left: 50px;
+        border-bottom: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -347,6 +436,17 @@ dt + .RUS {
         background-image: url("logo/curcat.svg");
         background-size: 100%;
     }
+    .section-guid dd{
+        font-size: 23px;
+        padding-left: 0px;
+        border-bottom: none;
+        padding-bottom: 5px;
+        list-style-type: '';
+    }
+    .section-guid dt{
+        padding-top: 10px;
+        border-top: dotted 4px white;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -371,5 +471,13 @@ dt + .RUS {
         font-family: 'EngraversGothic-BT';
         padding-bottom: 50px;
         border-bottom: dotted 4px white;
+    }
+    .artapp{
+        background-image: url("img/ArtAppBgMob.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-top: 177.50%; /* (img-height / img-width * container-width) */
+        /* (853 / 1280 * 100) */
     }
 }
