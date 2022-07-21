@@ -8,6 +8,10 @@
             "title": "Will the Zine have a digital or physical copy?",
             "text": ["We will be doing both."]
         },
+	    {
+            "title": "Is this a for-profit or a charity zine?",
+            "text": ["Secret Entries is a commercial Zine."]
+        },
         {
             "title": "What makes this Zine official?",
             "text": ["We were given Jakei’s approval to create this, and the fact she will be a contributing artist."]
@@ -25,8 +29,8 @@
             "text": ["We will not be answering fan questions pertaining to the story and plot on Jakei’s behalf. That is not the purpose of our project."]
         },
         {
-            "title": "I want to participate in the zine, where do I sign up?",
-            "text": ["We are currently in the works of making applications, we ask for your patience on this."]
+            "title": "Can I participate if I'm under 18 years old?",
+            "text": ["No, you must be 18+ by August 20th, 2022."]
         }
     ],
     "Japanese":[
@@ -37,6 +41,10 @@
         {
             "title": "Zineはデジタル版と冊子版のどちらがありますか？",
             "text": ["両方とも作る予定です。"]
+        },
+	    {
+            "title": "これは営利目的の本ですか？それともチャリティー目的の本ですか？",
+            "text": ["Secret Entriesは営利目的の本です。"]
         },
         {
             "title": "このZineがXTALE公認なのはなぜですか？",
@@ -57,6 +65,10 @@
         {
             "title": "Zineに参加したいのですが、どこで申し込めばいいのでしょうか？",
             "text": ["現在、申し込み先を作成中ですので、ご理解のほどよろしくお願いいたします。"]
+        },
+	    {
+            "title": "18歳未満でも参加できますか？",
+            "text": ["いいえ、2022年8月20日までに18歳以上でなければなりません。"]
         }
     ],
     "Spanish":[
@@ -67,6 +79,10 @@
         {
             "title": "¿Este Zine será físico o digital?",
             "text": ["Realizaremos ambos tipos."]
+        },
+	    {
+            "title": "¿Este Zine es con fines de lucro o para caridad?",
+            "text": ["Secret Entries es un Zine comercial."]
         },
         {
             "title": "¿Qué hace oficial a este Zine? ",
@@ -87,6 +103,10 @@
         {
             "title": "Quiero participar en el zine, ¿dónde puedo postularme?",
             "text": ["Actualmente nos encontramos realizando las solicitudes para aplicar, por lo pronto agradecemos su paciencia."]
+        },
+	    {
+            "title": "¿Puedo participar si soy menor de 18 años?",
+            "text": ["No, debes haber cumplido la mayoría de edad para el 20 de Agosto de 2022."]
         }
     ],
     "Russian":[
@@ -97,6 +117,10 @@
         {
             "title": "Зин будет в электронном или физическом виде?",
             "text": ["Зин будет выпущен в обоих вариантах. Однако для покупателей на территории РФ, скорее всего, он будет реализован только в физическом виде."]
+        },
+	    {
+            "title": "Это коммерческий или благотворительный Зин?",
+            "text": ["\"Секретные Записи\" - это коммерческий Зин."]
         },
         {
             "title": "Что делает этот Зин официальным?",
@@ -117,6 +141,10 @@
         {
             "title": "Я хочу принять участие в Зине, есть ли возможность как-то записаться?",
             "text": ["В настоящее время мы работаем над созданием заявок, поэтому просим проявить терпение."]
+        },
+	    {
+            "title": "Могу ли я принять участие, если мне меньше 18 лет?",
+            "text": ["Нет, вам должно быть 18+ на момент 20 августа, 2022."]
         }
     ]
 }
