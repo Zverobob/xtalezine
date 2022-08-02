@@ -18,7 +18,10 @@ const locale = {
             this.createLocaleButtons();
             this.buttons = document.querySelectorAll('.lang-btn'); 
             this.addHandlers();
-            this.updText("English");
+            if (fileName != 'scr/artapp.json')
+                this.updText("English");
+            else
+                this.updApplication("English");
         })
         .catch(() => console.error("WHERE'S MY LOCALES MAN?!"))
     },
@@ -38,8 +41,7 @@ const locale = {
             }
             else locBtn.setAttribute("data-sel", 0);
             locBtn.setAttribute("data-lang", key);
-            Section.appendChild(locBtn);
-        }
+            Section.appendChild(locBtn);        }
     },
 
     updText: function(lang){
@@ -60,6 +62,40 @@ const locale = {
                 text.textContent = element["text"][key];
                 Section.appendChild(text);
             }
+        });
+    },
+
+    updApplication: function(lang){
+        const Section = document.querySelector('.pbox');
+        Section.innerHTML = "";
+        locale.data[lang].forEach(element => {
+            if( lang == "Russian"){
+                Section.classList.add('RUS');
+            }
+            let skip = 0;
+            const link = document.createElement('a');
+            link.classList.add("a_appl");
+            link.setAttribute("onclick", "document.location='guidlines.html'");
+            link.innerHTML = "";
+            //Stupid method. Did just 4 lulz
+            for (let i = 0; i < element["text"].length; i++){
+                if (element["text"][i] == '^' && skip == 0){
+                    skip = 1;
+                    i++;
+                }
+                else if (element["text"][i] == '^' && skip == 1){
+                    Section.appendChild(link);
+                    skip = 0;
+                    i++;
+                }
+                if (skip == 0)
+                    Section.innerHTML += element["text"][i];
+                if (skip == 1)
+                    link.innerHTML += element["text"][i];
+            }
+            const btn = document.querySelector('.entry-button');
+            btn.setAttribute("onclick","document.location='"+element["link"]+"'");
+            console.log(btn);
         });
     },
 
@@ -84,7 +120,10 @@ const locale = {
             fadeOut.forEach(element => {
                 element.classList.add('fadeOut');
             });
-            setTimeout(function(){ locale.updText(btn.target.dataset.lang) }, 400);
+            if (fileName != 'scr/artapp.json')
+                setTimeout(function(){ locale.updText(btn.target.dataset.lang) }, 400);
+            else
+                setTimeout(function(){ locale.updApplication(btn.target.dataset.lang) }, 400);
         }
     },
     

@@ -1,0 +1,26 @@
+{
+    "English":[
+        {
+            "text": "If you're interested in participating in our Zine please fill the form below. Don't forget to read ^Zine Guidelines^ before applying!",
+            "link": "https://forms.gle/2rkPNTuG8uzz4ZmP9"
+        }
+    ],
+    "Japanese":[
+	    {
+            "text": "ZINEに興味のある方は、以下の項目ににご記入ください。応募前に必ず^ZINEガイドライン^を読んでください。",
+            "link": "https://forms.gle/coJ44fTpj3pyc1YM7"
+        }
+    ],
+    "Spanish":[
+	    {
+            "text": "Si estás interesado en participar en nuestro Zine, por favor llena el formulario a continuación. ¡No olvides leer ^las indicaciones del Zine^ antes de aplicar!",
+            "link": "https://forms.gle/hU1JfaKhVDA6r2sJ6"
+        }
+    ],
+    "Russian":[
+        {
+            "text": "Если Вы хотите принять в нашем Зине, пожалуйста, заполните форму ниже. Не забудьте ознакомиться с ^требованиями Зина^!",
+            "link": "https://forms.gle/Co4XmTJHoeVBqhsz7"
+        }
+    ]
+}

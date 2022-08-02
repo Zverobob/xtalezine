@@ -177,7 +177,7 @@ a{
     transition: 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.artapp a{
+.a_appl{
     color:#e42034;
     text-decoration: underline;
     cursor: pointer;
@@ -186,7 +186,7 @@ a{
     transition: 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-a:hover{
+.a_appl:hover{
     transition: 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
     text-shadow: lightsalmon 1px 1px 0, lightsalmon -1px -1px 0, 
     lightsalmon -1px 1px 0, lightsalmon 1px -1px 0;
@@ -194,21 +194,21 @@ a:hover{
 
 .artapp{
     background-image: url("img/ArtAppBg.png");
-    background-size: contain;
+    background-size:auto;
     background-repeat: no-repeat;
     background-position: top center;
-    padding-top: 56.50%;
+    width: 100%;
+    height: auto;
+    padding-top: 480px;
+    padding-bottom: 100px
 }
 
 .art-body{
-    position: absolute;
-    top: 550px;
-    left: 370px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 1 1 auto;
-    z-index: 0;
+    align-self: center;
 }
 .art-body > div:nth-of-type(21) {
     padding-right: 40px;
@@ -241,7 +241,12 @@ p{
 .intestLink{
     color: lightsteelblue;
 }
-
+.pbox {
+    background-color:#00000065;
+    border-radius: 30px;
+    padding: 5px 20px;
+    text-align: center;
+}
 .faq-content{
     position: relative;
     min-height: 990px;
@@ -316,19 +321,35 @@ p{
     font-family: 'EngraversGothic-BT';
     cursor: pointer;
     transition: 600ms ease-in-out;
-    margin-left: 40px;
     
     align-self: stretch;
     width: 100%;
     flex: 1 1 auto;
 }
+.lang-btn + .lang-btn{
+    margin-left: 40px;
+}
+.entry-button{
+    border-color: whitesmoke;
+    border-style: dotted;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 34px;
+    font-family: 'EngraversGothic-BT';
+    cursor: pointer;
+    transition: 600ms ease-in-out;
+    width: 200px;
+    height: 50px;
+    align-self: center;
+}
+
 .active {
     background-color: #5b2381; 
 }
 .red{
     background-color: #81233a; 
 }
-.lang-btn:hover,.top-button:hover{
+.lang-btn:hover,.top-button:hover,.entry-button:hover{
     background-color: #5b2381;
     transition: 600ms ease-in-out;
 }
@@ -377,8 +398,12 @@ dt + .RUS {
         max-width: 768px;
     }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px){
+    .artapp{
+        background-image: url("img/ArtAppBgSemi.png");
+    }
+}
+@media screen and (max-width: 816px) {
     body{
       background-size: auto 20%;
     }
@@ -391,13 +416,29 @@ dt + .RUS {
         max-width: 80%;
     }
     .lang-btn{
-        margin-left: 20px;
         font-size: 30px;
+    }
+    .lang-btn+.lang-btn{
+        margin-left: 20px;
     }
     .section-guid dd{
         font-size: 30px;
         padding-left: 50px;
         border-bottom: none;
+    }
+    .pbox {
+        background-color:#00000080;
+        border-radius: 30px;
+        padding: 5px 20px;
+        text-align: center;
+        font-size: 35px;
+        color:rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .artapp{
+        background-image: url("img/ArtAppBgSmall.png");
     }
 }
 
@@ -474,10 +515,17 @@ dt + .RUS {
     }
     .artapp{
         background-image: url("img/ArtAppBgMob.png");
-        background-size: contain;
+        background-size:cover;
         background-repeat: no-repeat;
         background-position: top center;
-        padding-top: 177.50%; /* (img-height / img-width * container-width) */
-        /* (853 / 1280 * 100) */
+        padding-top: 60px; 
+    }
+    .pbox{
+        
+        margin-top: 140px;
+        font-size: 30px;
+    }
+    .lang-btn + .lang-btn{
+        margin: 0;
     }
 }
