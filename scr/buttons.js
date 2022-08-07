@@ -94,7 +94,7 @@ const locale = {
                     link.innerHTML += element["text"][i];
             }
             const btn = document.querySelector('.entry-button');
-            btn.setAttribute("onclick","location.href='"+element["link"]+"'");
+            btn.setAttribute("onclick","window.open('"+element["link"]+"','_blank')");
             console.log(btn);
         });
     },
