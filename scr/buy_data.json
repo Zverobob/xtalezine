@@ -1,0 +1,59 @@
+{
+    "English":[
+        {
+            "text1": "The XTale Zine is a book which contains 31 illustrations, a double-page comic, and 13 exclusive XGaster Entries. These are secret notes, written by the creator of XTale, that complement the main story line.",
+            "text2": "All materials are arranged in chronological order, so the reader can dive back into the XTale universe and see it from a completely different perspective.",
+            "text3": "Digital Bundle is available on 3 languages: English, Spanish and Japanese.",
+            "text4": "All pre-orders are scheduled for August 2023*.",
+            "button": "Pre-Orders",
+            "link": "https://www.loadingcrewcrafts.com/store?Category=Jakei+Art",
+            "warn1": "Unfortunately, international shipping from the US is temporary closed. We're working on a solution to this problem. Follow us on socials for updates!",
+            "warn2":  "*Any delays will be informed via Loading Crew Crafts mailing list."
+        }
+    ],
+    "Japanese":[
+        {
+            "text1": "XTale Zineは31枚のイラストと1枚の見開きコミック、そして13のここだけでしか読めないエックスガスターに関する記述を含む1冊の本です。本編のストーリーを補完するXTaleの作者が書いた秘密のメモです。すべての資料は時系列に並んでおり、読者はXTaleの世界に再び飛び込み、全く異なる視点から見ることができます",
+            "text2": "電子書籍は3ヶ国語で提供されます。英語、スペイン語、日本語の3カ国語に対応しています。",
+            "text3": "予約販売は2023年8月以降を予定しております。",
+            "text4": "",
+            "button": "予約販売",
+            "link": "https://www.loadingcrewcrafts.com/store?Category=Jakei+Art",
+            "warn1": "残念ながら、アメリカからの国際配送は一時的に閉鎖されており、現在この問題の解決に取り組んでいます。最新情報はSNS等でご確認ください。",
+            "warn2":  "遅延が生じた場合はLoading Crew Craftsのメーリングリストを通じてお知らせいたします。"
+        }
+    ],
+    "Spanish":[
+        {
+            "text1": "El fanzine de XTale es un libro que contiene 31 ilustraciones, un cómic de doble página, y 13 entradas exclusivas de XGaster. Estas son notas secretas, escritas por la creadora de XTale, las cuales complementan la historia principal. ",
+            "text2": "Todo el material está organizado cronológicamente, así el lector podrá sumergirse nuevamente en el universo de XTale y verlo de una perspectiva completamente diferente.",
+            "text3": "El paquete digital está disponible en tres idiomas: Inglés, Español y Japonés.",
+            "text4": "Las preventas están programadas para Agosto de 2023*.",
+            "button": "Pre-ventas",
+            "link": "https://www.loadingcrewcrafts.com/store?Category=Jakei+Art",
+            "warn1": "Desafortunadamente, el envío internacional desde los EE.UU está temporalmente cerrado. Estamos trabajando en una solución a este problema. ¡Síguenos en redes sociales para obtener actualizaciones!",
+            "warn2":  "*Ante cualquier atraso en los envíos, se informará a través de correo electrónico por Loading Crew Crafts."
+        }
+    ],
+    "Russian":[
+        {
+            "text1": "XTale Зин - это сборник , который содержит в себе 31 иллюстрацию, двухстраничный комикс и 13 экслюзивных Записей ХГастера, написанные Jael Peñaloza (она же Джеки), которые дополняют основную сюжетную линию.",
+            "text2": "Все материалы расположены в хронологическом порядке, чтобы читатель смог вновь окунуться во вселенную XTale и увидеть её уже совсем с другой стороны.",
+            "text3": "",
+            "text4": "",
+            "button": "Предзаказы",
+            "link": "https://vk.com/xtalezine",
+            "warn1": "",
+            "warn2":  ""
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

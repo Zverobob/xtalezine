@@ -1,0 +1,131 @@
+{
+    "artists": [
+    {
+            "name": "CornMayor",
+            "description": "I might be the biggest nerd here, but I have no idea what is happening.",
+            "social": [
+                {
+                    "name": "Twiter",
+                    "link": "https://twitter.com/CornMayor"
+                },
+                {
+                    "name": "Tumblr",
+                    "link": "https://cornmayor.tumblr.com/"
+                }
+            ],
+            "img": "img/people/corn.jpg"
+        },
+        {
+            "name": "Jael Peñaloza",
+            "description": "Watermelons.",
+            "social": [
+                {
+                    "name": "YouTube",
+                    "link": "https://www.youtube.com/c/jakeihazen"
+                },
+                {
+                    "name": "Twitter",
+                    "link": "https://twitter.com/jaelarteo"
+                },
+                {
+                    "name": "Tumblr",
+                    "link": "https://xtaleunderverse.tumblr.com/"
+                }
+            ],
+            "img": "img/people/jakei.png"
+        },
+        {
+            "name": "Pokeninjager",
+            "description": "I guess you can call me an original XGaster fanboy.",
+            "social": [
+                {
+                    "name": "Tumblr",
+                    "link": "https://pokeninjager-ghost-art.tumblr.com/"
+                }
+            ],
+            "img": "img/people/pokeninjager.png"
+        },
+        {
+            "name": "AlainaPrana",
+            "social": [
+                {
+                    "name": "Twitter",
+                    "link": "https://twitter.com/AlainaPrana"
+                },
+                {
+                    "name": "Tumblr",
+                    "link": "https://alainaprana.tumblr.com"
+                },
+                {
+                    "name": "Shop",
+                    "link": "https://www.loadingcrewcrafts.com"
+                }
+            ],
+            "img": "img/people/alaina.png"
+        },
+        {
+            "name": "Mar",
+            "description": "A dog is the man's best friend. I am the dog.",
+            "social": [
+                {
+                    "name": "VK",
+                    "link": "https://vk.com/lastseekersrefuge"
+                },
+                {
+                    "name": "Tumblr",
+                    "link": "https://lastseekersrefuge.tumblr.com/"
+                }
+            ],
+            "img": "img/people/mar.jpg"
+        },
+        {
+            "name": "Mart",
+            "description": "",
+            "social": [
+                {
+                    "name": "YouTube",
+                    "link": ""
+                },
+                {
+                    "name": "Twitter",
+                    "link": ""
+                },
+                {
+                    "name": "Tumblr",
+                    "link": ""
+                }
+            ],
+            "img": "img/PFPZinesmall.png"
+        },
+        {
+            "name": "Rainer",
+            "description": "I uh got sucked back into this fandom again! Away we go :3",
+            "social": [
+                {
+                    "name": "Twitter",
+                    "link": "https://twitter.com/Rainer_fall"
+                },
+                {
+                    "name": "Twitch",
+                    "link": "https://www.twitch.tv/rainerfall1"
+                },
+                {
+                    "name": "DeviantArt",
+                    "link": "https://www.deviantart.com/rainer101"
+                }
+            ],
+            "img": "img/people/rainer.png"
+        },
+        {
+            "name": "Sashirou",
+            "description": "I love XTALE more than three meals a day! Especially when XGaster is hilarious and pitiful!",
+            "social": [
+                {
+                    "name": "Twitter",
+                    "link": "https://twitter.com/EXECsasirou"
+                }
+            ],
+            "img": "img/people/sashirou.png"
+        }
+    ]
+}

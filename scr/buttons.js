@@ -14,7 +14,6 @@ const locale = {
         .then(data => data.json())
         .then(json => {
             this.data = json;
-            console.log(fileName);
             this.createLocaleButtons();
             this.buttons = document.querySelectorAll('.lang-btn'); 
             this.addHandlers();

@@ -24,6 +24,97 @@ body {
     scrollbar-width: none;
 }
 
+.buy-flex-cont {
+    display: flex;
+    align-content: space-around;
+    margin: 0px 40px 0px 10px;
+}
+.buy-flex-box {
+    margin: 5px;    
+    padding: 10px;
+    flex: 1 1 auto;
+    font-family: 'EngraversGothic-BT';
+    line-height: 30px;
+    font-size: 30px;    
+    font-weight: 1000;
+    color: white;
+}
+.buy-flex-box:nth-child(2) {
+    align-self: center;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* Контакты */
+.artistSect {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-top: dotted 4px white;
+    border-bottom: dotted 4px white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 0 24px 0;
+    color: white;
+}
+.artistSect+.artistSect {
+    border-top: none;
+}
+
+.artistSect:last-child {
+    margin-bottom: 50px;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.artistSect img {
+    width: 146px;
+    height: 146px;
+    margin: auto 24px auto 24px;
+    border-radius: 50%;
+    border: 6px white;
+}
+
+.contacts p {
+    margin: 0;
+    margin-bottom: 12px;
+    margin-left: 36px;
+    padding: 0;
+    line-height: 24px;
+    font-size: 30px;
+}
+
+p.contacts-name {
+    margin-top: 2px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 60px;
+    padding-bottom: 28px;
+    border-bottom: 4px white dotted;
+    width: max-content;
+}
+
+.contacts a {
+    line-height: 24px;
+    font-size: 30px;
+    font-style: italic;
+    color:rgb(105, 109, 170)
+}
+.title {
+    font-size: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Contact end*/
+
 body::-webkit-scrollbar {
     display: none;
   }
@@ -84,7 +175,7 @@ body::-webkit-scrollbar {
     color: white;
 }
 
-.section-faq,.section-guid{
+.section-faq,.section-guid,.section-artists,.section-buy{
     min-height: 840px;
     background-image: url("img/FAQstrip.png");
     background-repeat: repeat-y;
@@ -92,8 +183,17 @@ body::-webkit-scrollbar {
     background-size: contain;
     padding-bottom: 90px;
 }
+
+.section-artists:first-child{
+    padding-bottom: 0px;
+}
+
 .section-guid{
     background-image: url("img/gdlstrip.png");
+}
+.section-buy{
+    background-image: url("img/buybg.png");
+    background-size: cover;
 }
 
 .section-app{
@@ -226,6 +326,11 @@ p{
     font-size: 46px;
     font-family: 'EngraversGothic-BT';
     color: white;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
 }
 
 .interstInfo{
@@ -281,6 +386,9 @@ p{
     padding: 30px 0;
     background-color: black;
     color: #ffffff;
+    -webkit-box-shadow: -1px 46px 69px 100px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 46px 69px 100px rgba(0, 0, 0, 1);
+    box-shadow: -1px 46px 69px 100px rgba(0, 0, 0, 1);
 }
 
 .footer-links{
@@ -291,7 +399,9 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
-
+.pad{
+    padding-top: 40px;
+}
 .footer-mail{
     text-align: center;
     color: white;
@@ -329,6 +439,33 @@ p{
 .lang-btn + .lang-btn{
     margin-left: 40px;
 }
+img{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+.buy-btn{
+    border-color: whitesmoke;
+    border-style: dotted;
+    background-color: black;
+    color: white;
+    font-size: 34px;
+    font-family: 'EngraversGothic-BT';
+    cursor: pointer;
+    transition: 600ms ease-in-out;
+    width: 100%;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+.RUSbtn{
+    padding-bottom: 10px;
+}
+
 .entry-button{
     border-color: whitesmoke;
     border-style: dotted;
@@ -349,7 +486,7 @@ p{
 .red{
     background-color: #81233a; 
 }
-.lang-btn:hover,.top-button:hover,.entry-button:hover{
+.lang-btn:hover,.top-button:hover,.entry-button:hover,.buy-btn:hover{
     background-color: #5b2381;
     transition: 600ms ease-in-out;
 }
@@ -367,6 +504,8 @@ p{
     color: transparent;
     transition: 400ms;
     border-color: transparent;
+    background-color: transparent;
+    opacity: 0;
 }
 .section-guid .fadeOut{
     color: transparent;
@@ -376,11 +515,63 @@ p{
 .RUS{
     font-family: 'EngraversGothicRU';
 }
+.JAP{
+    line-height: 50px;
+    font-size: 34px;
+}
 dd + .RUS {
     line-height: 80%;
 }
 dt + .RUS {
     margin-top: 20px;
+}
+
+.warning{
+    font-size: 24px;
+}
+.products{
+    max-width:1000px;
+}
+
+@media screen and (max-width: 1440px) {
+    body{
+      background-size: auto 20%;
+    }
+    dt{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    dd{
+        font-size: 25px;
+    }
+    .container{
+        max-width: 768px;
+    }
+    .buy-flex-box {
+        margin: 5px;    
+        padding: 10px;
+        flex: 1 1 auto;
+        font-family: 'EngraversGothic-BT';
+        line-height: 25px;
+        font-size: 8px;    
+        font-weight: 1000;
+        color: white;
+    }
+    .buy-flex-box:nth-child(2) {
+        align-self: center;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    p{
+        font-size: 25px; 
+    }
+    .warning {
+        font-size: 15px;
+    }
+    .JAP{
+        font-size: 25px; 
+        line-height: 30px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -396,6 +587,34 @@ dt + .RUS {
     }
     .container{
         max-width: 768px;
+    }
+    .buy-flex-box {
+        margin: 5px;    
+        padding: 10px;
+        flex: 1 1 auto;
+        font-family: 'EngraversGothic-BT';
+        line-height: 20px;
+        font-size: 8px;    
+        font-weight: 1000;
+        color: white;
+    }
+    .buy-flex-box:nth-child(2) {
+        align-self: center;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    p{
+        font-size: 20px; 
+    }
+    .warning {
+        font-size: 15px;
+    }
+    .JAP{
+        font-size: 20px; 
+        line-height: 25px;
+    }
+    .products{
+        max-width:600px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -433,6 +652,39 @@ dt + .RUS {
         text-align: center;
         font-size: 35px;
         color:rgb(255, 255, 255);
+    }
+    .buy-flex-cont{
+        flex-direction: column;
+        margin: 0 40px;
+    }
+    .buy-flex-box {
+        margin: 5px;    
+        padding: 10px;
+        flex: 1 1 auto;
+        font-family: 'EngraversGothic-BT';
+        line-height: 20px;
+        font-size: 8px;    
+        font-weight: 1000;
+        color: white;
+        align-self: center;
+    }
+    .buy-flex-box:nth-child(2) {
+        align-self: center;
+        margin: 0px 5px;
+        padding: 0px;
+    }
+    p{
+        font-size: 20px; 
+    }
+    .warning {
+        font-size: 15px;
+    }
+    .JAP{
+        font-size: 20px; 
+        line-height: 25px;
+    }
+    .products{
+        max-width:700px;
     }
 }
 
@@ -527,5 +779,38 @@ dt + .RUS {
     }
     .lang-btn + .lang-btn{
         margin: 0;
+    }
+    .buy-flex-cont{
+        flex-direction: column;
+        margin: 0 40px;
+    }
+    .buy-flex-box {
+        margin: 5px;    
+        padding: 10px;
+        flex: 1 1 auto;
+        font-family: 'EngraversGothic-BT';
+        line-height: 20px;
+        font-size: 8px;    
+        font-weight: 1000;
+        color: white;
+        align-self: center;
+    }
+    .buy-flex-box:nth-child(2) {
+        align-self: center;
+        margin: 0px 5px;
+        padding: 0px;
+    }
+    p{
+        font-size: 20px; 
+    }
+    .warning {
+        font-size: 15px;
+    }
+    .JAP{
+        font-size: 20px; 
+        line-height: 25px;
+    }
+    .products{
+        width: 100%;
     }
 }
