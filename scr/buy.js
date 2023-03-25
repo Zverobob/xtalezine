@@ -84,7 +84,7 @@ const locale = {
         preorder_btn.textContent = locale.data[lang][0]["button"];
         let loc = "";
         if (lang == "Russian"){
-             loc = "window.open('" + locale.data[lang][0]["link"] + '\')';
+            loc = "window.open('" + locale.data[lang][0]["link"] + '\')';
         }
         else{
             loc = "window.location='" + locale.data[lang][0]["link"] + '\'';
