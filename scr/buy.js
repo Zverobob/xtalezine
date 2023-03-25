@@ -82,7 +82,7 @@ const locale = {
             preorder_btn.classList.add('JAP');
         }
         preorder_btn.textContent = locale.data[lang][0]["button"];
-        if (lang == "Russian){
+        if (lang == "Russian"){
              let loc = "window.open('" + locale.data[lang][0]["link"] + '\')';
         }
         else{
