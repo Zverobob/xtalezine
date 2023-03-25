@@ -82,11 +82,12 @@ const locale = {
             preorder_btn.classList.add('JAP');
         }
         preorder_btn.textContent = locale.data[lang][0]["button"];
+        let loc = "";
         if (lang == "Russian"){
-             let loc = "window.open('" + locale.data[lang][0]["link"] + '\')';
+             loc = "window.open('" + locale.data[lang][0]["link"] + '\')';
         }
         else{
-            let loc = "window.location='" + locale.data[lang][0]["link"] + '\'';
+            loc = "window.location='" + locale.data[lang][0]["link"] + '\'';
         }
         preorder_btn.setAttribute ("onclick", loc);
         text_container.appendChild(preorder_btn);
